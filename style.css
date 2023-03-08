@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black;
+    color: white; */
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+    color: white;
+   
+  
+}
+ a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+ a:hover{
+ border-bottom: 2px solid white;
+
+}
+
+.header{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.search{
+    border :2px solid white;
+    padding: 5px;
+   
+}
+li{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+}
+.mobile{
+  display: none;
+}
+.header input{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-weight: 400;
+}
+
+
+ .content{
+    display: flex;
+    padding-top: 100px;
+ }
+
+  .rightpart{
+    width: 50%;
+
+    /* background-color: red; */
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Signin,.Signup{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: white;
+   
+  }
+  .rightpart h2{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    right:15px;
+  }
+
+  .inputmail{
+    display: flex;
+  }
+ 
+  .inputmail input{
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 300px;
+    color: white;
+  }
+ .icon{
+    position: relative;
+    right:18px;
+ }
+
+ .inputpassword{
+    display: flex;
+  }
+ 
+  .inputpassword input{
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 300px;
+    color: white;
+  }
+ .iconpassword{
+    position: relative;
+    right:18px;
+ }
+
+
+.option{
+    display: flex;
+    gap: 15px;
+}
+
+button{
+  width: 300px;
+  padding: 10px;
+  background-color: #ff1a75;
+  color: white;
+  font-size: 19px;
+  border: none;
+  outline: none;
+}
+/* a{
+
+  padding-bottom: 13px;
+  transition: all;
+  transition-duration:0.5s;
+
+} */
+
+
+
+.emailtext{
+  transition:all;
+  transition-duration:2s;
+}
+.email:hover .emailtext{
+transform:translate(0px,-6.5px);
+}
+
+.passwordtext{
+  transition:all;
+  transition-duration:2s;
+}
+.password:hover .passwordtext{
+transform:translate(0px,-8px);
+}
+
+
+.leftpart{
+  /* background-color: pink; */
+  background: transparent;
+     width: 50%;
+  color: white;
+ padding-left: 30px;
+
+
+}
+
+.name{
+  display:flex;
+  gap:5px;
+}
+.iconchip{
+  position: relative;
+  top:5px;
+}
+
+.footer{
+  padding-top: 25%;
+}
+ 
+.footer .icons{
+  padding-top: 3px;
+  display: flex;
+  gap: 18px;
+}
+
+ .Signup{
+  
+  opacity: 0; 
+  transition:all;
+  transition-duration: 4s;
+
+ }
+    .helper1{
+      transform: translate(0px,-250px);
+      opacity: 1;
+    }
+
+.Signin{
+  transition:all;
+  transition-duration: 4s;
+}
+
+.helper{
+  opacity: 0;
+  transform: translate(0px,-200px);
+}
+
+.mobile{
+  width: 100px;
+  margin:auto;
+}
+
+@media(max-width:768px){
+  body{
+    
+    overflow: scroll;
+   
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+   
+ }
+ .rightpart{
+  /* padding-left: 250px; */
+  width: 100vw;
+ }
+ ul{
+  display: none;
+ }
+.mobile{
+  display: block;
+  
+}
+ .search{
+  display: flex;
+  width: 90%*100vw;
+  height: 50px;
+ }
+}
